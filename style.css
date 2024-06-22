@@ -33,18 +33,26 @@ html {
 
 .sidebar ul {
     list-style: none;
-    padding-left: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 .sidebar li {
     margin-top: 25px;
     font-size: 1.6em;
+    display: flex;
+    align-items: center;
+    /* Vertically center the icon and text */
 
 }
 
-.sidebar li#settings {
-    list-style-image: url('./img/cog.svg');
-
+.list-icon {
+    width: 20px;
+    /* Adjust based on icon size */
+    height: 20px;
+    /* Adjust based on icon size */
+    margin-right: 10px;
+    /* Space between icon and text */
 }
 
 .main-nav {}
