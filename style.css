@@ -12,7 +12,7 @@ html {
     height: 100%;
     display: grid;
     grid-template-rows: 150px 800px 50px;
-    grid-template-columns: clamp(200px, 25%, 350px) 3fr;
+    grid-template-columns: clamp(200px, 20%, 350px) 3fr;
 }
 
 .sidebar {
@@ -57,7 +57,9 @@ html {
 
 .main-nav {}
 
-.other-nav {}
+ul.other-nav {
+    padding-top: 35px;
+}
 
 .header {
     background-color: #FFFFFF;
