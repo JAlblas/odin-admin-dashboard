@@ -55,6 +55,12 @@ html {
     /* Space between icon and text */
 }
 
+.list-icon-big {
+    width: 40px;
+    /* Adjust based on icon size */
+    height: 40px;
+}
+
 .main-nav {}
 
 ul.other-nav {
