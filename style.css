@@ -12,7 +12,7 @@ html {
 .container {
     height: 100%;
     display: grid;
-    grid-template-rows: 150px 800px 50px;
+    grid-template-rows: 250px 800px 50px;
     grid-template-columns: clamp(200px, 20%, 350px) 3fr;
 }
 
@@ -88,13 +88,13 @@ ul.other-nav {
 
 .search {
     display: flex;
-    margin-top: 25px;
-
+    align-items: center;
+    gap: 25px;
 }
 
-.search .search-icon {
-    width: 20px;
-    height: 20px;
+.search img.icon {
+    width: 25px;
+    height: 25px;
     margin-right: 10px;
 }
 
@@ -103,6 +103,16 @@ ul.other-nav {
     width: 50%;
     border-radius: 25px;
     border: none;
+    height: 25px;
+    flex: 1;
+}
+
+.left,
+.right {
+    flex: 1;
+    width: 50%;
+    display: flex;
+    align-items: center;
 }
 
 .main {
