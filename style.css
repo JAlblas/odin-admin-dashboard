@@ -7,12 +7,13 @@ html {
     height: 100%;
     font-size: 16px;
     margin: 0;
+    font-family: "Roboto", sans-serif;
 }
 
 .container {
     height: 100%;
     display: grid;
-    grid-template-rows: 250px 800px 50px;
+    grid-template-rows: 200px 800px 50px;
     grid-template-columns: clamp(200px, 20%, 350px) 3fr;
 }
 
@@ -21,7 +22,6 @@ html {
     grid-column: 1 / 2;
     background-color: var(--theme-blue-color);
     color: #FFF;
-    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
     padding-left: 25px;
@@ -76,7 +76,7 @@ ul.other-nav {
 .main,
 .footer,
 .profile-info {
-    padding: 25px;
+    padding: 10px 25px;
 }
 
 .header {
@@ -90,9 +90,10 @@ ul.other-nav {
     display: flex;
     align-items: center;
     gap: 25px;
+    flex: 2;
 }
 
-.search img.icon {
+img.icon {
     width: 25px;
     height: 25px;
     margin-right: 10px;
@@ -100,7 +101,7 @@ ul.other-nav {
 
 .search input {
     background-color: #E2E8F0;
-    width: 50%;
+    width: 60%;
     border-radius: 25px;
     border: none;
     height: 25px;
@@ -110,9 +111,31 @@ ul.other-nav {
 .left,
 .right {
     flex: 1;
-    width: 50%;
     display: flex;
     align-items: center;
+}
+
+.left {
+    flex: 2;
+}
+
+.right {
+    justify-content: right;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-info img.icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 25px;
+    background-color: #FACC14;
+    border-radius: 90px;
+    padding: 10px;
+
 }
 
 .main {
