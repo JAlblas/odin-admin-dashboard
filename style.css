@@ -76,13 +76,15 @@ ul.other-nav {
 .main,
 .footer,
 .profile-info {
-    padding: 10px 25px;
+    padding: 10px 40px;
 }
 
 .header {
     background-color: #FFFFFF;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
+    box-shadow: #AFAFAF;
+    ;
 
 }
 
@@ -126,6 +128,13 @@ img.icon {
 .profile-info {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+
 }
 
 .profile-info img.icon {
@@ -138,10 +147,27 @@ img.icon {
 
 }
 
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+button {
+    background-color: var(--theme-blue-color);
+    border: none;
+    color: #FFF;
+    border-radius: 25px;
+    padding: 10px 30px;
+    font-weight: bold;
+
+}
+
 .main {
     background-color: #E2E8F0;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
+    padding: 25px;
 }
 
 .footer {
