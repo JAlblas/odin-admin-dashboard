@@ -203,8 +203,21 @@ button {
 
 .messages {
     display: grid;
-    grid-template-rows: 3;
+    height: 250px;
+    grid-template-rows: repeat(auto-fit, 80px);
     grid-template-columns: 1;
+    padding: 10px;
+    background-color: #FFF;
+}
+
+.message {
+    background-color: #FFF;
+    border-bottom: 1px solid #E2E8F0;
+    padding: 10px;
+}
+
+.message:last-child {
+    border: none;
 }
 
 .trending {
@@ -214,8 +227,21 @@ button {
 
 .users {
     display: grid;
-    grid-template-rows: 4;
+    height: 225px;
+    grid-template-rows: repeat(auto-fit, 50px);
     grid-template-columns: 1;
+    padding: 10px;
+    background-color: #FFF;
+}
+
+.user {
+
+    border-bottom: 1px solid #E2E8F0;
+    padding: 10px;
+}
+
+.user:last-child {
+    border: none;
 }
 
 .footer {
