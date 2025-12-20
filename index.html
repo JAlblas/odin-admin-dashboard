@@ -1,203 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <title>Admin Dashboard</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-    <div class="container">
-        <div class="sidebar">
-            <h1><img src="img/view-dashboard.svg" alt="icon" class="list-icon list-icon-big">Dashboard</h1>
-            <ul class="main-nav">
-                <li><img src="img/home-outline.svg" alt="icon" class="list-icon">Home</li>
-                <li><img src="img/face-man-profile.svg" alt="icon" class="list-icon">Profile</li>
-                <li><img src="img/message-outline.svg" alt="icon" class="list-icon">Messages</li>
-                <li><img src="img/history.svg" alt="icon" class="list-icon">History</li>
-                <li><img src="img/note-multiple-outline.svg" alt="icon" class="list-icon">Tasks</li>
-                <li><img src="img/account-group-outline.svg" alt="icon" class="list-icon">Communities</li>
-            </ul>
-            <ul class="other-nav">
-                <li id="settings"><img src="img/cog.svg" alt="icon" class="list-icon">Settings</li>
-                <li><img src="img/help-circle-outline.svg" alt="icon" class="list-icon">Support</li>
-                <li><img src="img/shield-check-outline.svg" alt="icon" class="list-icon">Privacy</li>
-            </ul>
+  <body>
+    <div id="container">
+      <aside>
+        <h1>
+          <img
+            src="img/view-dashboard.svg"
+            alt="icon"
+            class="list-icon list-icon-big"
+          />Dashboard
+        </h1>
+        <nav>
+          <ul id="upper-nav">
+            <li>
+              <img
+                src="img/home-outline.svg"
+                alt="icon"
+                class="list-icon"
+              />Home
+            </li>
+            <li>
+              <img
+                src="img/face-man-profile.svg"
+                alt="icon"
+                class="list-icon"
+              />Profile
+            </li>
+            <li>
+              <img
+                src="img/message-outline.svg"
+                alt="icon"
+                class="list-icon"
+              />Messages
+            </li>
+            <li>
+              <img src="img/history.svg" alt="icon" class="list-icon" />History
+            </li>
+            <li>
+              <img
+                src="img/note-multiple-outline.svg"
+                alt="icon"
+                class="list-icon"
+              />Tasks
+            </li>
+            <li>
+              <img
+                src="img/account-group-outline.svg"
+                alt="icon"
+                class="list-icon"
+              />Communities
+            </li>
+          </ul>
+          <ul id="lower-nav">
+            <li id="settings">
+              <img src="img/cog.svg" alt="icon" class="list-icon" />Settings
+            </li>
+            <li>
+              <img
+                src="img/help-circle-outline.svg"
+                alt="icon"
+                class="list-icon"
+              />Support
+            </li>
+            <li>
+              <img
+                src="img/shield-check-outline.svg"
+                alt="icon"
+                class="list-icon"
+              />Privacy
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <header>
+        <div id="search">
+          <div class="left">
+            <img class="icon" src="img/magnify.svg" alt="" />
+            <input type="text" name="" id="" />
+          </div>
+          <div class="right">
+            <img class="icon" src="img/bell-badge-outline.svg" />
+            <img class="icon avatar" src="img/cat.svg" alt="" />
+            <h4>Morgan Oakley</h4>
+          </div>
         </div>
-        <div class="header">
-            <div class="search">
-                <div class="left">
-                    <img class="icon" src="img/magnify.svg" alt="">
-                    <input type="text" name="" id="">
-                </div>
-                <div class="right">
-                    <img class="icon" src="img/bell-badge-outline.svg">
-                    <img class="icon" src="img/cat.svg" alt="">
-                    <h4>Morgan Oakley</h4>
-                </div>
-
+        <div id="profile-info">
+          <div class="profile">
+            <img class="icon avatar" src="img/cat.svg" alt="" />
+            <div class="name">
+              <p>Hi there,</p>
+              <h3>Morgan Oakley (@morgan)</h3>
             </div>
-            <div class="profile-info">
-                <div class="profile">
-                    <img class="icon" src="img/cat.svg" alt="">
-                    <div class="name">
-                        <p>Hi there,</p>
-                        <h3>Morgan Oakley (@morgan)</h3>
-                    </div>
-                </div>
+          </div>
 
-                <div class="buttons">
-                    <button>New</button>
-                    <button>Upload</button>
-                    <button>Share</button>
-                </div>
-            </div>
-
+          <div class="buttons">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+          </div>
         </div>
-        <div class="main">
-            <div class="projects">
-                <h4>Your Projects</h4>
-                <div class="project-container">
-                    <div class="project">
-                        <h5>Project Title</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit repudiandae et perspiciatis
-                            odio. Cumque sint cum, velit aliquam, et quos quas dolor quidem cupiditate.</p>
-                    </div>
-                    <div class="project">
-                        <h5>Project Title</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit repudiandae et perspiciatis
-                            odio. Cumque sint cum, velit aliquam, et quos quas dolor quidem cupiditate.</p>
-                        <div class="icons">
-                            <img class="project-img" src="img/heart.svg" alt="">
-                            <img class="project-img" src="img/star.svg" alt="">
-                            <img class="project-img" src="img/file-star-outline.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="project">
-                        <h5>Project Title</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit repudiandae et perspiciatis
-                            odio. Cumque sint cum, velit aliquam, et quos quas dolor quidem cupiditate.</p>
-                        <div class="icons">
-                            <img class="project-img" src="img/heart.svg" alt="">
-                            <img class="project-img" src="img/star.svg" alt="">
-                            <img class="project-img" src="img/file-star-outline.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="project">
-                        <h5>Project Title</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit repudiandae et perspiciatis
-                            odio. Cumque sint cum, velit aliquam, et quos quas dolor quidem cupiditate.</p>
-                        <div class="icons">
-                            <img class="project-img" src="img/heart.svg" alt="">
-                            <img class="project-img" src="img/star.svg" alt="">
-                            <img class="project-img" src="img/file-star-outline.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="project">
-                        <h5>Project Title</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit repudiandae et perspiciatis
-                            odio. Cumque sint cum, velit aliquam, et quos quas dolor quidem cupiditate.</p>
-                        <div class="icons">
-                            <img class="project-img" src="img/heart.svg" alt="">
-                            <img class="project-img" src="img/star.svg" alt="">
-                            <img class="project-img" src="img/file-star-outline.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="project">
-                        <h5>Project Title</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit repudiandae et perspiciatis
-                            odio. Cumque sint cum, velit aliquam, et quos quas dolor quidem cupiditate.</p>
-                        <div class="icons">
-                            <img class="project-img" src="img/heart.svg" alt="">
-                            <img class="project-img" src="img/star.svg" alt="">
-                            <img class="project-img" src="img/file-star-outline.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-
+      </header>
+      <div id="main">
+        <div id="projects">
+          <h4>Your Projects</h4>
+          <div class="project-container">
+            <div class="project">
+              <h5>Project Title</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                repudiandae et perspiciatis odio. Cumque sint cum, velit
+                aliquam, et quos quas dolor quidem cupiditate.
+              </p>
             </div>
-
-            <div class="annoucements">
-                <h4>Announcements</h4>
-                <div class="messages">
-                    <div class="message">
-                        <h5>Message Title</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit repudiandae et perspiciatis
-                            odio.</p>
-                    </div>
-                    <div class="message">
-                        <h5>Message Title</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit repudiandae et perspiciatis
-                            odio.</p>
-                    </div>
-                    <div class="message">
-                        <h5>Message Title</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit repudiandae et perspiciatis
-                            odio.</p>
-                    </div>
-                </div>
+            <div class="project">
+              <h5>Project Title</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                repudiandae et perspiciatis odio. Cumque sint cum, velit
+                aliquam, et quos quas dolor quidem cupiditate.
+              </p>
+              <div class="icons">
+                <img class="project-img" src="img/heart.svg" alt="" />
+                <img class="project-img" src="img/star.svg" alt="" />
+                <img
+                  class="project-img"
+                  src="img/file-star-outline.svg"
+                  alt=""
+                />
+              </div>
             </div>
-
-            <div class="trending">
-                <h4>Trending</h4>
-                <div class="users">
-                    <div class="user">
-                        <user class="user_left">
-                            <img src="img/cat.svg" alt="" class="icon">
-                        </user>
-                        <div class="user_right">
-                            <h5>@tegan</h5>
-                            <p>Follow this guy</p>
-                        </div>
-
-                    </div>
-                    <div class="user">
-                        <user class="user_left">
-                            <img src="img/cat.svg" alt="" class="icon">
-                        </user>
-                        <div class="user_right">
-                            <h5>@tegan</h5>
-                            <p>Follow this guy</p>
-                        </div>
-                    </div>
-                    <div class="user">
-                        <user class="user_left">
-                            <img src="img/cat.svg" alt="" class="icon">
-                        </user>
-                        <div class="user_right">
-                            <h5>@tegan</h5>
-                            <p>Follow this guy</p>
-                        </div>
-                    </div>
-                    <div class="user">
-                        <user class="user_left">
-                            <img src="img/cat.svg" alt="" class="icon">
-                        </user>
-                        <div class="user_right">
-                            <h5>@tegan</h5>
-                            <p>Follow this guy</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="project">
+              <h5>Project Title</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                repudiandae et perspiciatis odio. Cumque sint cum, velit
+                aliquam, et quos quas dolor quidem cupiditate.
+              </p>
+              <div class="icons">
+                <img class="project-img" src="img/heart.svg" alt="" />
+                <img class="project-img" src="img/star.svg" alt="" />
+                <img
+                  class="project-img"
+                  src="img/file-star-outline.svg"
+                  alt=""
+                />
+              </div>
             </div>
-
+            <div class="project">
+              <h5>Project Title</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                repudiandae et perspiciatis odio. Cumque sint cum, velit
+                aliquam, et quos quas dolor quidem cupiditate.
+              </p>
+              <div class="icons">
+                <img class="project-img" src="img/heart.svg" alt="" />
+                <img class="project-img" src="img/star.svg" alt="" />
+                <img
+                  class="project-img"
+                  src="img/file-star-outline.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="project">
+              <h5>Project Title</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                repudiandae et perspiciatis odio. Cumque sint cum, velit
+                aliquam, et quos quas dolor quidem cupiditate.
+              </p>
+              <div class="icons">
+                <img class="project-img" src="img/heart.svg" alt="" />
+                <img class="project-img" src="img/star.svg" alt="" />
+                <img
+                  class="project-img"
+                  src="img/file-star-outline.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="project">
+              <h5>Project Title</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                repudiandae et perspiciatis odio. Cumque sint cum, velit
+                aliquam, et quos quas dolor quidem cupiditate.
+              </p>
+              <div class="icons">
+                <img class="project-img" src="img/heart.svg" alt="" />
+                <img class="project-img" src="img/star.svg" alt="" />
+                <img
+                  class="project-img"
+                  src="img/file-star-outline.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="footer">
-            Copyright 2023 - Jasper
+        <div id="announcements">
+          <h4>Announcements</h4>
+          <div class="messages">
+            <div class="message">
+              <h5>Message Title</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                repudiandae et perspiciatis odio.
+              </p>
+            </div>
+            <div class="message">
+              <h5>Message Title</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                repudiandae et perspiciatis odio.
+              </p>
+            </div>
+            <div class="message">
+              <h5>Message Title</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                repudiandae et perspiciatis odio.
+              </p>
+            </div>
+          </div>
         </div>
 
+        <div id="trending">
+          <h4>Trending</h4>
+          <div class="users">
+            <div class="user">
+              <user class="user_left">
+                <img src="img/cat.svg" alt="" class="icon" />
+              </user>
+              <div class="user_right">
+                <h5>@tegan</h5>
+                <p>Follow this guy</p>
+              </div>
+            </div>
+            <div class="user">
+              <user class="user_left">
+                <img src="img/cat.svg" alt="" class="icon" />
+              </user>
+              <div class="user_right">
+                <h5>@tegan</h5>
+                <p>Follow this guy</p>
+              </div>
+            </div>
+            <div class="user">
+              <user class="user_left">
+                <img src="img/cat.svg" alt="" class="icon" />
+              </user>
+              <div class="user_right">
+                <h5>@tegan</h5>
+                <p>Follow this guy</p>
+              </div>
+            </div>
+            <div class="user">
+              <user class="user_left">
+                <img src="img/cat.svg" alt="" class="icon" />
+              </user>
+              <div class="user_right">
+                <h5>@tegan</h5>
+                <p>Follow this guy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>Copyright 2023 - Jasper</p>
+      </footer>
     </div>
-</body>
-
+  </body>
 </html>
