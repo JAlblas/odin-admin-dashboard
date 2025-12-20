@@ -1,5 +1,6 @@
 :root {
   --theme-blue-color: #1992d3;
+  --roboto-font: "Roboto", sans-serif;
 }
 
 body,
@@ -7,17 +8,17 @@ html {
   height: 100%;
   font-size: 16px;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--roboto-font);
 }
 
 #container {
   height: 100%;
   display: grid;
-  grid-template-rows: 200px 800px 50px;
-  grid-template-columns: clamp(200px, 20%, 350px) 3fr;
+  grid-template-rows: 180px 800px 50px;
+  grid-template-columns: clamp(250px, 20%, 300px) 1fr;
 }
 
-aside {
+aside#menu {
   grid-row: 1 / 4;
   grid-column: 1 / 2;
   background-color: var(--theme-blue-color);
@@ -50,16 +51,12 @@ aside li {
 
 .list-icon {
   width: 20px;
-  /* Adjust based on icon size */
   height: 20px;
-  /* Adjust based on icon size */
   margin-right: 10px;
-  /* Space between icon and text */
 }
 
 .list-icon-big {
   width: 40px;
-  /* Adjust based on icon size */
   height: 40px;
 }
 
@@ -83,13 +80,7 @@ header {
   display: flex;
   align-items: center;
   gap: 25px;
-  flex: 2;
-}
-
-img.icon {
-  width: 25px;
-  height: 25px;
-  margin-right: 10px;
+  flex: 1;
 }
 
 #search input {
@@ -99,6 +90,7 @@ img.icon {
   border: none;
   height: 25px;
   flex: 1;
+  padding-left: 10px;
 }
 
 .left,
@@ -116,6 +108,13 @@ img.icon {
   justify-content: right;
 }
 
+img.icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  border-radius: 90px;
+}
+
 #profile-info {
   display: flex;
   align-items: center;
@@ -123,9 +122,17 @@ img.icon {
   box-shadow: 0px 2px 4px -4px #cccccc;
 }
 
-.profile {
+#profile {
   display: flex;
   align-items: center;
+}
+
+#profile p {
+  margin-bottom: 5px;
+}
+
+#profile h3 {
+  margin-top: 0px;
 }
 
 #profile-info img.icon {
@@ -133,7 +140,7 @@ img.icon {
   height: 50px;
   margin-right: 25px;
   background-color: #facc14;
-  border-radius: 90px;
+
   padding: 10px;
 }
 
@@ -156,15 +163,22 @@ button {
   font-weight: bold;
 }
 
+button:hover,
+nav li,
+.project-icon,
+.icon {
+  cursor: pointer;
+}
+
 #main {
   background-color: #e2e8f0;
   grid-row: 2 / 3;
   grid-column: 2 / 3;
-  padding: 25px;
-
   display: grid;
   grid-template-rows: 400px 400px;
-  grid-template-columns: clamp(800px, 70%, 1200px) 3fr;
+  grid-template-columns: clamp(600px, 75%, 1200px) 1fr;
+  column-gap: 20px;
+  row-gap: 0px;
 }
 
 #main h4 {
@@ -183,15 +197,15 @@ button {
   grid-column: 1 / 2;
 }
 
-.project-container {
-  height: 80vh;
+#project-container {
   display: grid;
-  grid-template-rows: repeat(auto-fit, 205px);
-  grid-template-columns: repeat(auto-fit, 400px);
-  gap: 25px;
+  grid-template-rows: repeat(3, 200px);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 44px;
 }
 
 .project {
+  height: 180px;
   background-color: #fff;
   border-left: 8px solid #f0b329;
   padding: 20px 20px;
@@ -226,7 +240,7 @@ button {
   height: 300px;
   grid-template-rows: repeat(auto-fit, 100px);
   grid-template-columns: 1;
-  padding: 10px;
+  padding: 15px 10px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0px 4px 4px -4px #939393;
@@ -235,7 +249,7 @@ button {
 .message {
   background-color: #fff;
   border-bottom: 1px solid #e2e8f0;
-  padding: 10px;
+  padding: 0px 5px 15px;
 }
 
 .message:last-child {
